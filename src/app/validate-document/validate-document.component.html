@@ -1,0 +1,18 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+      <h3 class="mb-3 text-center">Validate Document</h3>
+      <div class="form-group">
+        <input type="number" [(ngModel)]="documentDetails.citizenId" class="form-control" placeholder="id (10 Numbers)">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="documentDetails.urlDocument" class="form-control" placeholder="Document URL">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="documentDetails.documentTitle" class="form-control" placeholder="Document Title">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" (click)="validateDocuments(documentDetails)">Validate Document</button>
+      </div>
+    </div>
+  </div>
+
